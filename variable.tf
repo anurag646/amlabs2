@@ -2,7 +2,7 @@ variable "region" {
      description = "Region of AWS VPC"
 }
 variable "name" {
-  default = "Onu_Admin"
+  default = "admin007"
   type        = "string"
   description = "The name of the user"
 }
