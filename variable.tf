@@ -3,7 +3,7 @@ variable "region" {
 }
 variable "name" {
   default = "admin007"
-  type        = "string"
+  type        = string
   description = "The name of the user"
 }
 
