@@ -1,0 +1,20 @@
+name: Call Reusable Deploy Workflow
+
+on:
+  workflow_dispatch:
+    inputs:
+      env:
+        description: 'Choose environment'
+        required: true
+        type: choice
+        default: dev
+        options:
+          - dev
+          - staging
+          - production
+
+jobs:
+  call-deploy:
+    uses: ./.github/workflows/reusable-deploy.yml
+    with:
+      environment: production
