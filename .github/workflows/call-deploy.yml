@@ -3,7 +3,7 @@ name: Call Reusable Deploy Workflow
 on:
   workflow_dispatch:
     inputs:
-      env:
+      environment:
         description: 'Choose environment'
         required: true
         type: choice
@@ -16,5 +16,4 @@ on:
 jobs:
   call-deploy:
     uses: ./.github/workflows/reusable-deploy.yml
-    with:
-      environment: production
+
