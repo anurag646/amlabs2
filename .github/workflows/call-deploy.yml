@@ -12,6 +12,9 @@ on:
           - dev
           - staging
           - production
+      Region:
+        description: 'Enter your region'
+        required: true          
 
 jobs:
   call-deploy:
