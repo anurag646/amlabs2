@@ -7,14 +7,14 @@ on:
         description: 'Choose environment'
         required: true
         type: choice
-        default: stage
+        default: stageing
         options:
           - dev
           - staging
           - production
       Region:
         description: 'Enter your region'
-        required: false          
+        required: true          
 
 jobs:
   call-deploy:
