@@ -17,4 +17,4 @@ jobs:
   call-deploy:
     uses: ./.github/workflows/reusable-deploy.yml
     with:
-      environment: $ {{ inputs.environment }}
+      environment: ${{ inputs.environment }}
