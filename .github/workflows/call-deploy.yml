@@ -16,4 +16,5 @@ on:
 jobs:
   call-deploy:
     uses: ./.github/workflows/reusable-deploy.yml
-
+    with:
+      environment: production
